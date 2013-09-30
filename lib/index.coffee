@@ -341,5 +341,6 @@ exports.DeferredList = (deferreds) ->
          # See if we are done now
          if deferreds.length == res.length
             done res
-
+   if deferreds.length == 0
+      done()
    return deferred
